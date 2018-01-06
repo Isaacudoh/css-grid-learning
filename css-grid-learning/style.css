@@ -1,0 +1,23 @@
+/* direct div under wrapper */
+.wrapper > div{
+    background: red;
+    padding: 1em; 
+}
+
+/* controls bg of every other div in wrapper */
+.wrapper > div:nth-child(odd){
+    background: orange;
+}
+
+.wrapper{
+    display: grid;
+    /* nothing happens. add width of colums */
+    grid-template-columns: 70% 30%;
+    /* 
+        grid-column-gap: 1em
+        grid-row-gap: 1em
+        
+        short-hand below
+    */    
+        grid-gap: 1em;
+}
